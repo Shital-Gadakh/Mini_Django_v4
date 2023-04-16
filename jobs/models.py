@@ -34,7 +34,7 @@ class JobTitle(models.Model):
 
 class JobDescription(models.Model):
     role = models.CharField(max_length=250)
-    description_text = models.DateTimeField(max_length=250)
+    description_text = models.CharField(max_length=250)
     pub_date = models.DateTimeField(default=timezone.now)
 
     def __str__(self):

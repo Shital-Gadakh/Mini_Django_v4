@@ -6,8 +6,9 @@ from jobs import views
 urlpatterns = [
 
     path(r"^wel*", views.welcome, name="welcome"),
-    path("portal/", views.portal_details, name="portal_details"),
-    path("<int:job_id>/", views.job_description, name="JD")   # http://127.0.0.1:8000/jobs/55/
+    path("portal/", views.get_portal_details, name="portal_details"),
+    path("jobtitle/", views.job_titles, name="job_titles"),
+    path("<int:job_id>/", views.get_job_description, name="JD")   # http://127.0.0.1:8000/jobs/55/
 ]
 ##########################################################
 # How to capture path parameter from url         #
