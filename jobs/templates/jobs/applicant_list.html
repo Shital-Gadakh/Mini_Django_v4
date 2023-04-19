@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>applicant page</title>
+</head>
+<body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>APPLICANTS</title>
+</head>
+<body>
+
+<ul>
+{% for candidate in object_list %}
+    <li>{{ candidate.name }}</li>
+  {% endfor %}
+</ul>
+<a href="create">create new applicant</a>
+
+</body>
+</html>
